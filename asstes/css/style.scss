@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #031831;
+}
+
+.sidebar{
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    background-color: #152642;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px 5px;
+
+    .sidebar__items{
+        padding: 5px;
+
+        .item{
+            padding: 15px 5px 15px 10px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            user-select: none;
+            cursor: pointer;
+            margin-bottom: 10px;
+
+            &:hover{
+                background-color: #506680;
+            }
+
+        }
+
+        .item:nth-child(3){
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.section{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.home{
+    overflow: hidden;
+    display: flex;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-family: sans-serif;
+        
+        .content__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 10px;
+
+            .info-title{
+                font-size: 40px;
+                font-weight: 700;
+                color: #D4D8E7;
+                margin-bottom: 10px;
+            }
+
+            .info-about{
+                font-weight: 500;
+                font-size: 23px;
+                color: #767D92;
+                padding-left: 5px;
+            }
+        }
+
+        .content__links{
+            display: flex;
+            padding: 10px 15px;
+
+            .link{
+                padding: 5px;
+                margin: 5px;
+                transition: transform 0.5s;
+
+                a{
+                    color: #767D92;
+                    transition: color 0.3s;
+                }
+
+                &:hover{
+                    transform: scale(1.1);
+
+                    a{
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

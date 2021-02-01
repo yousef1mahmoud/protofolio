@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./asstes/css/style.css">
+    <title>Yousef</title>
+    </style>
+</head>
+<body>
+    
+    <!-- SideBar -->
+    <div class="sidebar">
+        <div class="sidebar__items">
+            <div class="item">
+                <span><i class="fa fa-home"></i></span>
+                {{navbar.home}}
+            </div>
+            <div class="item">
+                <span><i class="fas fa-ribbon"></i></span>
+                {{navbar.certifications}}
+            </div>
+            <div class="item">
+                <span><i class="fa fa-envelope"></i></span>
+                {{navbar.contactme}}
+            </div>
+            <div class="item">
+                <span><i class="fa fa-envelope"></i></span>
+                {{navbar.contactme}}
+            </div>
+            <div class="item">
+                <span><i class="fa fa-envelope"></i></span>
+                {{navbar.contactme}}
+            </div>
+            <div class="item">
+                <span><i class="fa fa-envelope"></i></span>
+                {{navbar.contactme}}
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div class="section home">
+        <div class="content">
+            <div class="content__info">
+                <div class="info-title">
+                    Yousef Mahmoud
+                </div>
+                <div class="info-about">
+                    I'm a full stack developer
+                </div>
+            </div>
+            <div class="content__links">
+                <div class="link">
+                    <a href="https://www.linkedin.com/in/yousef-dev/" target="_blank">
+                        <span><i class="fab fa-linkedin"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        App({
+            el: 'body',
+            data: {
+                navbar: {
+                    home: 'Home',
+                    certifications: 'Certifications',
+                    contactme: 'Contact Me'
+                }
+            }
+        })
+    </script>
+</body>
+</html>
